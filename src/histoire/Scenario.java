@@ -56,11 +56,11 @@ public class Scenario {
 				controlAcheterProduit);
 		BoundaryAfficherMarche boundaryAfficherMarche = new BoundaryAfficherMarche(
 				controlAfficherMarche);
-		BoundaryLeVillage boundaryLeMarche = new BoundaryLeVillage(
+		BoundaryLeVillage boundaryLeVillage = new BoundaryLeVillage(
 				boundaryAfficherVillageois, boundaryEmmenager,
 				boundaryChercherEtal, boundaryLibererEtal,
 				boundaryAfficherMarche, boundaryAcheterProduit);
-		boundaryLeMarche.menu();
+		boundaryLeVillage.menu();
 	}
 
 }
