@@ -8,8 +8,13 @@ public class ControlLibererEtal {
 		this.controlTrouverEtalVendeur = controlTrouverEtalVendeur;
 	}
 
-	//TODO a completer
+	public boolean isVendeur(String nomVendeur){
+		Etal etal;
+		etal = controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur);
+		if (etal!=null){
 
+		}
+	}
 	/**
 	 * 
 	 * @param produit

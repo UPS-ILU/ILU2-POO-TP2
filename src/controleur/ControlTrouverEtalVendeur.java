@@ -4,8 +4,6 @@ import personnages.Gaulois;
 import villagegaulois.Etal;
 import villagegaulois.Village;
 
-import java.security.Guard;
-
 public class ControlTrouverEtalVendeur {
 	private Village village;
 
