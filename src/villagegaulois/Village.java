@@ -74,8 +74,7 @@ public class Village {
 	 * @return le numéro de l'étal où c'est installé le vendeur ou -1 s'il n'en
 	 *         a pas trouvé
 	 */
-	public int installerVendeur(Gaulois vendeur, String produit,
-			int nbProduit) {
+	public int installerVendeur(Gaulois vendeur, String produit, int nbProduit) {
 		int indiceEtal = marche.trouverEtalLibre();
 		if (indiceEtal >= 0) {
 			marche.utiliserEtal(indiceEtal, vendeur, produit, nbProduit);
