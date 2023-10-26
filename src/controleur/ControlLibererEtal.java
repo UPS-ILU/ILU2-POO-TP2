@@ -1,14 +1,21 @@
 package controleur;
 
+import personnages.Gaulois;
+import villagegaulois.Etal;
+import villagegaulois.Village;
+
 public class ControlLibererEtal {
 	private ControlTrouverEtalVendeur controlTrouverEtalVendeur;
+	private Village village;
 
-	public ControlLibererEtal(
-			ControlTrouverEtalVendeur controlTrouverEtalVendeur) {
+	public ControlLibererEtal(ControlTrouverEtalVendeur controlTrouverEtalVendeur, Village village) {
 		this.controlTrouverEtalVendeur = controlTrouverEtalVendeur;
+		this.village = village;
 	}
 
-	//TODO a completer
+	public boolean isVendeur(String nomVendeur) {
+		return (controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur) != null);
+	}
 
 	/**
 	 * 
@@ -19,8 +26,12 @@ public class ControlLibererEtal {
 	 *         quantité de produit vendu
 	 */
 	public String[] libererEtal(String nomVendeur) {
-		//TODO a completer
 		String[] donneesEtal = null;
+		Etal etal = controlTrouverEtalVendeur.trouverEtalVendeur(nomVendeur);
+
+		Gaulois gaulois = village.trouverHabitant(nomVendeur);
+		donneesEtal = etal.etatEtal();
+		village.partirVendeur(gaulois);
 		return donneesEtal;
 	}
 
