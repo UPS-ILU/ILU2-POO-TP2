@@ -24,30 +24,20 @@ public class TestControleursDesCas {
 		Gaulois asterix = new Gaulois("Asterix", 6);
 		Gaulois obelix = new Gaulois("Obelix", 12);
 
-		ControlAfficherVillage controlAfficherVillage = new ControlAfficherVillage(
-				village);
+		ControlAfficherVillage controlAfficherVillage = new ControlAfficherVillage(village);
 
 		// Cas 2 : Emmenager
 
-//		System.out.println("Cas 2 : Emmenager");
-//		ControlEmmenager controlEmmenager = new ControlEmmenager(village);
-//		controlEmmenager.ajouterDruide("Panoramix", 10, 5, 7);
-//		controlEmmenager.ajouterGaulois("Asterix", 6);
-//		controlEmmenager.ajouterGaulois("Obelix", 12);
-//		String[] nomsVillageois = controlAfficherVillage.donnerNomsVillageois();
-//		System.out.println("Les villageois sont : ");
-//		for (String villageois : nomsVillageois) {
-//			System.out.println("- " + villageois);
-//		}
-		
-//		Sortie Console :
-//		Cas 2 : Emmenager
-//		Le druide Panoramix : « Bonjour, je suis le druide Panoramix et ma potion peut aller d'une force 5 à 7.»
-//		Les villageois sont : 
-//		- Abraracourcix
-//		- le druide Panoramix
-//		- Asterix
-//		- Obelix
+		System.out.println("Cas 2 : Emmenager");
+		ControlEmmenager controlEmmenager = new ControlEmmenager(village);
+		controlEmmenager.ajouterDruide("Panoramix", 10, 5, 7);
+		controlEmmenager.ajouterGaulois("Asterix", 6);
+		controlEmmenager.ajouterGaulois("Obelix", 12);
+		String[] nomsVillageois = controlAfficherVillage.donnerNomsVillageois();
+		System.out.println("Les villageois sont : ");
+		for (String villageois : nomsVillageois) {
+			System.out.println("- " + villageois);
+		}
 
 		// Cas 3 : Verifier Identification
 //		System.out.println("///////////////////////////////");
@@ -59,13 +49,6 @@ public class TestControleursDesCas {
 //		vendeur = controlVerifierIdentite.verifierIdentite("Intrus");
 //		System.out.println("Intrus est un villageois ? " + vendeur);
 
-//		Sortie Console :
-		
-//		Cas 3 : Verifier Identification
-//		Panoramix est un villageois ? true
-//		Intrus est un villageois ? false
-
-
 		// Cas 4 : Prendre etal
 
 //		System.out.println("///////////////////////////////");
@@ -74,11 +57,6 @@ public class TestControleursDesCas {
 //				controlVerifierIdentite, village);
 //		int numeroEtal = controlPrendreEtal.prendreEtal("Obelix", "fleur", 5);
 //		System.out.println("Obelix a pris l'étal n°" + numeroEtal);
-
-//		Sortie Console :
-//		Cas 4 : Prendre etal
-//		Obelix a pris l'étal n°1
-
 
 		// Cas 5 : trouverEtalVendeur
 
@@ -102,13 +80,6 @@ public class TestControleursDesCas {
 //		} else {
 //			System.out.println(" n'est pas trouvé");
 //		}
-		
-
-//		Sortie Console :
-//		Cas 5 : trouver etal vendeur
-//		L'étal d'Obélix est trouvé
-//		L'étal de Intrus n'est pas trouvé
-
 
 		// Cas 6 : libererEtal
 
@@ -129,22 +100,6 @@ public class TestControleursDesCas {
 //		}
 //		String[] ventesIntrus = controlLibererEtal.libererEtal("Intrus");
 //		System.out.println("Les ventes d'Intrus : " + ventesIntrus);
-		
-
-//		Sortie Console :
-//		Cas 6 : Liberer etal
-//		Les ventes d'Obelix : 
-//		[0] : un boolean indiquant si l'étal est occupé 
-//		[1] : nom du vendeur
-//		[2] : produit vendu
-//		[3] : quantité de produit à vendre au début du marché
-//		[4] : quantité de produit vendu
-//		true
-//		Obelix
-//		fleur
-//		5
-//		0
-//		Les ventes d'Intrus : null
 
 		// Cas 7 : Afficher marche
 
@@ -158,16 +113,6 @@ public class TestControleursDesCas {
 //		for (String etal : marche) {
 //			System.out.println(etal);
 //		}
-		
-
-//		Sortie Console :
-//		Cas 7 : Afficher Marche
-//		Obelix
-//		3
-//		menhirs
-//		Asterix
-//		10
-//		poissons
 
 		// Cas 8 : Acheter produit
 
@@ -181,13 +126,6 @@ public class TestControleursDesCas {
 //		System.out.println("Achat de " + nbProduitAcheter + " menhirs sur 2");
 //		nbProduitAcheter = controlAcheterProduit.acheterProduit("Obelix", 3);
 //		System.out.println("Achat de " + nbProduitAcheter + " menhirs sur 3");
-		
-
-//		Sortie Console :
-//		Cas 8 : Acheter Produit
-//		Obelix a 3 menhir sur son etal
-//		Achat de 2 menhirs sur 2
-//		Achat de 1 menhirs sur 3
 
 	}
 
