@@ -9,7 +9,7 @@ public class ControlLibererEtal {
 	private ControlTrouverEtalVendeur controlTrouverEtalVendeur;
 	private Village village;
 	public ControlLibererEtal(
-			ControlTrouverEtalVendeur controlTrouverEtalVendeur) {
+			ControlTrouverEtalVendeur controlTrouverEtalVendeur, Village village) {
 		this.controlTrouverEtalVendeur = controlTrouverEtalVendeur;
 		this.village = village;
 		}
@@ -28,10 +28,13 @@ public class ControlLibererEtal {
 	 *         quantité de produit vendu
 	 */
 	public String[] libererEtal(String nomVendeur) {
-		Gaulois vendeur = village.trouverHabitant(nomVendeur);
-		Etal etal = village.rechercherEtal(vendeur);
-		String[] donneesEtal = etal.etatEtal();
-		village.partirVendeur(vendeur);
+		String[] donneesEtal = null;
+		if(isVendeur(nomVendeur)) {
+			Gaulois vendeur = village.trouverHabitant(nomVendeur);
+			Etal etal = village.rechercherEtal(vendeur);
+			donneesEtal = etal.etatEtal();
+			village.partirVendeur(vendeur);
+		}
 		return donneesEtal;
 	}
 
