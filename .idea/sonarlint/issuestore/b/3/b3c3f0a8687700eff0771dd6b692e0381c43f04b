@@ -1,0 +1,19 @@
+
+{
+java:S11925"`Define a constant instead of duplicating this literal "///////////////////////////////" 6 times.(ÙéÚ€ýÿÿÿÿ
+]
+java:S1192"GDefine a constant instead of duplicating this literal "Obelix" 8 times.(Ó‹Ü¹
+b
+java:S1192:"GDefine a constant instead of duplicating this literal "Intrus" 3 times.(¬‚¨Íÿÿÿÿÿ
+e
+java:S1192"HDefine a constant instead of duplicating this literal "Asterix" 3 times.(Î‘ƒá8ËÇó´¸1
+P
+java:S1854":Remove this useless assignment to local variable "obelix".(Ó‹Ü¹
+Q
+java:S1854";Remove this useless assignment to local variable "asterix".(Î‘ƒá
+M
+java:S1135"2Complete the task associated to this TODO comment.(ù³ýžýÿÿÿÿ
+B
+java:S1481",Remove this unused "asterix" local variable.(Î‘ƒá
+A
+java:S1481"+Remove this unused "obelix" local variable.(Ó‹Ü¹
