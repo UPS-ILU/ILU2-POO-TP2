@@ -209,8 +209,7 @@ public class Village {
 		private String[] donnerEtat() {
 			int tailleTableau = getNbEtalsOccupe() * 3;
 			String[] donnees = new String[tailleTableau];
-			int j = 0;
-			for (int i = 0; i < etals.length; i++) {
+			for (int i = 0, j = 0; i < etals.length; i++) {
 				Etal etal = etals[i];
 				if (etal.isEtalOccupe()) {
 					Gaulois vendeur = etal.getVendeur();
