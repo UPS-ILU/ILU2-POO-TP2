@@ -5,8 +5,7 @@ import controleur.ControlAfficherVillage;
 public class BoundaryAfficherVillage {
 	private ControlAfficherVillage controlAfficherVillage;
 
-	public BoundaryAfficherVillage(
-			ControlAfficherVillage controlAfficherVillage) {
+	public BoundaryAfficherVillage(ControlAfficherVillage controlAfficherVillage) {
 		this.controlAfficherVillage = controlAfficherVillage;
 	}
 
