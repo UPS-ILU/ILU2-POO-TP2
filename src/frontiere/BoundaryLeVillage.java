@@ -1,12 +1,9 @@
 package frontiere;
 
-import java.util.Scanner;
-
 public class BoundaryLeVillage {
 
 	private BoundaryPrendreEtal boundaryChercherEtal;
 	private BoundaryLibererEtal boundaryLibererEtal;
-	private Scanner scan = new Scanner(System.in);
 	private BoundaryAfficherMarche boundaryAfficherMarche;
 	private BoundaryAcheterProduit boundaryAcheterProduit;
 	private BoundaryEmmenager boundaryEmmenager;
