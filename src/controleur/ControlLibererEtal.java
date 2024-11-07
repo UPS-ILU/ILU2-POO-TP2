@@ -12,7 +12,7 @@ public class ControlLibererEtal {
 
 	/**
 	 * 
-	 * @param produit
+	 * @param nomVendeur
 	 * @return donneesEtal est un tableau de chaine contenant
 	 * 		[0] : un boolean indiquant si l'étal est occupé
 	 * 		[1] : nom du vendeur
