@@ -35,8 +35,7 @@ public class BoundaryLeVillage {
 			question.append("4 - quitter l'application");
 			choixUtilisateur = Clavier.entrerEntier(question.toString());
 			if (choixUtilisateur > 0 && choixUtilisateur < 4) {
-				System.out.println("Quel est votre nom ?");
-				String nom = scan.next();
+				String nom = Clavier.entrerChaine("Quel est votre nom ?");
 				switch (choixUtilisateur) {
 				case 1:
 					menuVoyageur(nom);
