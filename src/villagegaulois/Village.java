@@ -1,6 +1,5 @@
 package villagegaulois;
 
-//TP2
 import personnages.Chef;
 import personnages.Druide;
 import personnages.Gaulois;
